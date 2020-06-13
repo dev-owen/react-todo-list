@@ -22,4 +22,5 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
   );
 };
 
-export default TodoListItem;
+// 컴포넌트의 props가 바뀌지 않았더라면, 리렌더링하지 않도록 설정하여 함수형 컴포넌트의 리렌더링 성능을 최적화 할 수 있다.
+export default React.memo(TodoListItem);
